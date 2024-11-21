@@ -1,9 +1,10 @@
 # WASI
 
-This is (hoping) 15 minutes presentation about how we can start WASI.
-Probably there will be another 3 or 4 15 minutes presentation to finish all.
+This is a series of four mini 15-minute presentations that can bootstrap your WASI programming.
 
 ### 1. Writing your first wasi app
+  The ideal story would be that you could simply compile your existing code with the new build target 'wasm32-wasi' without modifying any of your code. But in reality...
+
   "Talk is cheap. Show me the code." - Linus Torvalds
   - [Hello World](./hello-world/README.md)
   - [Http Request - Wasi crate](./http_request_wasi/README.md)
