@@ -1,0 +1,6 @@
+package seungjin:http-request-witbindigen;
+
+world http-request-witbindgen {
+    include wasi:http/proxy@0.2.2;
+    include wasi:cli/command@0.2.2;
+}

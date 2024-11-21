@@ -1,0 +1,9 @@
+default:
+    just --list
+
+build:
+    cargo clean
+    cargo component build --target wasm32-wasip2
+
+run:
+    wasmtime -S http -S cli target/wasm32-wasip2/debug/http_request_witbindgen.wasm

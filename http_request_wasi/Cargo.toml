@@ -1,0 +1,15 @@
+[package]
+name = "http_request_wasi"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+wasi = "0.13.3"
+anyhow = "1"
+
+[profile.release]
+codegen-units = 1
+opt-level = "s"
+debug = false
+strip = true
+lto = true
